@@ -1,16 +1,17 @@
 const textConfig = {
-  text1: "Hello các bạn nữ A10",
-  text2: "Sắp tới là ngày 20/10 nè",
-  text3: "Dạo này các bạn có mệt mỏi với việc học online không nhỉ ?",
-  text4: "Tụi mình nghĩ là mấy bạn mệt với mấy cái deadline lắm, nên là tụi mình có mấy món quà tinh thần nho nhỏ",
-  text5: "Thôi mình hổng nhận đâu",
-  text6: "Đâu cho tụi mình xem thử",
-  text7: "Các bạn muốn nhận được gì trong năm học này nè ?",
-  text8: "Gửi cho tụi mình <3",
-  text10: "1 2 3 con cá. 20/10 vui vẻ nhá",
+  text1: "Helloooo các bạn nữ dth A10",
+  text2: "Sắp tới là ngày 20/10 nèeee",
+  text3: "Dạo này mấy bạn mệt mỏi với mấy cái deadline lắm đúng hong nè ? :3",
+  text4: "Thì nhân ngày 20/10 á, nên là tụi mình có mấy món quà tinh thần nho nhỏ để tặng mấy bạn",
+  text5: "Thôi tụi mình hổng dám nhận đâu",
+  text6: "Đâu cho tụi mình xem thử coiiiiii",
+  text7: "Các bạn có gì để nói với tụi mình nèeee ?",
+  text8: "Gửi cho tụi mình coi dớiii",
+  text9: "Cảm ơn nhoooo, mấy ông cute thiệc <3333",
+  text10: "1, 2, 3 con cá. 20/10 vui vẻ nháaaa",
   text11:
-    "Okela nè. Chúc mấy bạn nữ A10 có một ngày 20/10 thiệc là dui dẻ nhoaaaa",
-  text12: "Okela luôn <3",
+    "Okela nè. Chúc mấy bạn nữ A10 có một ngày 20/10 thiệc là dui dẻ nhoaaaaaa",
+  text12: "Okelaaa luônnnnn <3",
 };
 
 $(document).ready(function () {
@@ -83,7 +84,27 @@ $(document).ready(function () {
   $("#no").click(() => {
     if (screen.width >= 900) switchButton();
   });
-  
+
+  // generate text in input
+  function textGenerate() {
+    var n = "";
+    var text = " " + textConfig.text9;
+    var a = Array.from(text);
+    var textVal = $("#txtReason").val() ? $("#txtReason").val() : "";
+    var count = textVal.length;
+    if (count > 0) {
+      for (let i = 1; i <= count; i++) {
+        n = n + a[i];
+        if (i == text.length + 1) {
+          $("#txtReason").val("");
+          n = "";
+          break;
+        }
+      }
+    }
+    $("#txtReason").val(n);
+  }
+
   // show popup
   $("#yes").click(function () {
     var audio = new Audio("sound/tick.mp3");
