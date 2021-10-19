@@ -40,12 +40,14 @@
 
 header h2 {
   font-family: 'Pacifico';
+  color: #FF99FF;
   font-size: 80px;
   text-align: center;
 	margin-bottom: 30px;
 }
 header h4 {
   font-family: 'Pacifico';
+  color: #CCFFFF;
   text-align: center;
 }
 
