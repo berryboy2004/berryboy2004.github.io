@@ -1,6 +1,6 @@
 const textConfig = {
   text1: "Helloooo các bạn nữ dth A10",
-  text2: "Sắp tới là ngày 20/10 nèeee",
+  text2: "Hôm nay là ngày 20/10 nèeee",
   text3: "Dạo này mấy bạn mệt mỏi với mấy cái deadline lắm đúng hong nè ? :3",
   text4: "Thì nhân ngày 20/10 á, nên là tụi mình có mấy món quà tinh thần nho nhỏ để tặng mấy bạn",
   text5: "Thôi tụi mình hổng dám nhận đâu",
